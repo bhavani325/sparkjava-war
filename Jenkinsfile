@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('git clone') {
             steps {
-                git url: 'https://github.com/bhavani325/sparkjava-war.git'
+                git branch: 'main',
+                    url: 'https://github.com/bhavani325/sparkjava-war.git'
             }
         }
 
